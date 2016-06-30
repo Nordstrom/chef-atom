@@ -15,8 +15,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+include_recipe 'atom'
+
 atom_apm 'lychee-theme'
 
 atom_apm 'file-icons' do
   version '1.7.13'
+end
+
+atom_apm 'git-plus' do
+  action :remove
 end
